@@ -1,0 +1,18 @@
+## linux_user_based_question
+```
+  1. Create an user named  test1 with following details
+  Ans. sudo adduser test1
+
+  2. set password for test1 user LinuxLife
+  Ans. after run adduser in password give the password 'LinuxLife'
+
+  3. for this user set alias of date command by the name of  mytime
+  Ans. switch user using 'su - test1' and add 'alias mytime=date'
+
+  4. Alias must be permanent
+  Ans. For permanent alias go to the user .bashrc file using editior and add this 'alias mytime=date'
+
+  5. test1 user must not be able to run cal command
+  Ans. For this go to localuser and run command 'setfacl -m u:test1:--- /bin/cal'
+       for remove this 'setfacl -x u:test1 /bin/cal'
+```
