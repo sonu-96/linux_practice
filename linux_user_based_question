@@ -1,5 +1,3 @@
-## linux_user_based_question
-```
   1. Create an user named  test1 with following details
   Ans. sudo adduser test1
 
@@ -15,4 +13,3 @@
   5. test1 user must not be able to run cal command
   Ans. For this go to localuser and run command 'setfacl -m u:test1:--- /bin/cal'
        for remove this 'setfacl -x u:test1 /bin/cal'
-```
